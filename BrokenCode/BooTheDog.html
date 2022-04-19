@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boo The Dog</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Linking CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Linking jQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Linking Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Yellowtail' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="jumbotron bg-primary text-center">
+		<h1>Boo The Dog Fan Page!</h1>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">About Boo</div>
+				<div class="panel-body">
+					<p>
+					Boo the dog belongs to a San Francisco-based Facebook employee who created a Facebook page for the dog with a statement "My name is Boo. I am a dog. Life is good." He became popular in October 2010 after singer Ke$ha sent a tweet that she had a new boyfriend, linking to the page.
+					</p>
+					<p>
+					Chronicle Books, noticing that Boo had 5 million Facebook fans at the time, approached the owner to write a picture book. In August 2011, Boo: The Life of the World's Cutest Dog, written by his owner under pen name J.H. Lee, was published. The book was eventually published in ten languages. A second book followed, Boo: Little Dog in the Big City, as well as a calendar and plans for a cut-out book and additional children's books. He also has his own stuffed animal for kids. His merchandise includes a Gund stuffed animal.
+					</p>
+					Boo was appointed a spokesdog for Virgin America airline, which featured photos of him in an airplane along with advice for people traveling with pets. In April 2012, Boo was the subject of a death hoax after #RIPBOO appeared on Facebook. Tweets followed as Gizmodo writer Sam Biddle tweeted Boo had died. It was later confirmed by The Chronicle Book staff that Boo was alive and well. In July 2012, Boo was named the Official Pet Liaison of Virgin America.
+					</p>
+					<p>
+					Read more at: <a href="https://en.wikipedia.org/wiki/Boo_(dog)">https://en.wikipedia.org/wiki/Boo_(dog)</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="well text-center">
+				<div>
+					<img class="img-responsive" src="https://img.buzzfeed.com/buzzfeed-static/static/2015-04/21/16/enhanced/webdr05/enhanced-31550-1429646952-7.jpg">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<br><br>
+
+	<div class="row">
+
+		<div class="col-sm-6 text-center">
+			<button class="btn btn-primary form-control" id="factButton">Random Boo Fact</button>
+			<div class="well text-center">
+				<div>
+					<p id="factText">Click the button for a random Boo fact!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">List Of Boo's Favorite Things</div>
+				<div class="panel-body">
+					<ol>
+						<li>Dressing Up</li>
+						<li>Eating Grass</li>
+						<li>Sleeping</li>
+						<li>Swimming</li>
+						<li>Hiking</li>
+					</ol>
+				</div>
+				</div>
+			</div>
+		</div>
+
+	<br><br><br><br>
+
+	<div class="row text-center">
+			
+		<div class="col-sm-6 text-center">
+				<button class="btn" id="textGreen">Green</button>
+				<button class="btn" id="textOrange">Orange</button>
+			<button class="btn" id="textPink">Pink</button>
+			<br>
+			<br>
+			<div class="well text-center">
+				<p id="funText">Boo Rules!</p>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+		<button class="btn" id="boxGrow">Grow</button>
+		<button class="btn" id="boxShrink">Shrink</button>
+		<br>
+		<br>
+		<div class="well text-center">
+			<img id="box" src="data:image/jpeg;base64,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">
+		</div>
+	</div>
+
+	</div>
+	
+</div>
+
+<!-- Linking Javascript file-->
+<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
